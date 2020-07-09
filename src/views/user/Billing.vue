@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div class="text-center">
+    <h3>Billing page</h3>
   </div>
 </template>
 

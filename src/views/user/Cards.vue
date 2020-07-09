@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div class="text-center">
+    <h3>Cards page</h3>
   </div>
 </template>
 
