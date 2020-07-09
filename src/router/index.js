@@ -155,7 +155,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  hash: true,
+  mode: "hash",
   base: process.env.BASE_URL,
   routes
 });

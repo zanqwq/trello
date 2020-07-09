@@ -1,13 +1,6 @@
 <template>
   <div>
     <b-navbar type="dark" variant="dark" fixed="top">
-      <b-navbar-brand
-        to="/home"
-        style="position: absolute; left: 50%; transform: translateX(-50%)"
-      >
-        Trello
-      </b-navbar-brand>
-
       <b-navbar-nav>
         <template v-if="!hasLogin">
           <b-nav-item to="/home">HOME</b-nav-item>
@@ -63,7 +56,7 @@
           <!-- <b-avatar icon="people-circle" button></b-avatar> -->
           <b-dropdown right menu-class="mt-3" no-caret>
             <template #button-content>
-              <b-icon icon="people-circle"></b-icon>
+              {{ user.username.substring(0, 1).toUpperCase() }}
             </template>
             <b-dropdown-text>
               {{ user.username }}

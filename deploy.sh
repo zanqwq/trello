@@ -16,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@gitee.com:zanqwq/trello-clone.git master:gh-pages
+git push -f git@github.com:zanqwq/trello.git master:gh-pages
 
 cd -

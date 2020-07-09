@@ -42,10 +42,8 @@
         <hr />
         <b-link :to="{ name: 'login' }">Already have an account? Log in</b-link>
       </b-form>
-
-      <p></p>
     </div>
-    <Footer class="footer position-absolute" />
+    <Footer class="footer position-absolute d-none d-sm-block" />
   </div>
 </template>
 
@@ -55,7 +53,7 @@ import { uid } from "@/utils/utils.js";
 export default {
   data() {
     return {
-      email: "",
+      email: this.$route.params.email || "",
       username: "",
       state: null
     };

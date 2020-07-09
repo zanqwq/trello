@@ -18,7 +18,7 @@
         your projects in a fun, flexible, and rewarding way.
       </p>
 
-      <b-form>
+      <b-form @submit.prevent="$router.push({ name: 'signup' })">
         <b-form-group>
           <b-input-group class="mt-3">
             <b-form-input

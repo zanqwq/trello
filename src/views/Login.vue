@@ -39,7 +39,7 @@
 
       <p></p>
     </div>
-    <Footer class="footer position-absolute" />
+    <Footer class="footer position-absolute d-none d-sm-block" />
   </div>
 </template>
 
