@@ -1,29 +1,26 @@
 <template>
   <div>
     <b-navbar type="dark" variant="dark" fixed="top">
+      <b-navbar-brand
+        to="/home"
+        style="position: absolute; left: 50%; transform: translateX(-50%)"
+      >
+        Trello
+      </b-navbar-brand>
+
       <b-navbar-nav>
         <template v-if="!hasLogin">
           <b-nav-item to="/home">HOME</b-nav-item>
-          <b-nav-item href="#">TOUR</b-nav-item>
           <b-nav-item :to="{ name: 'blog' }">BLOG</b-nav-item>
         </template>
         <template v-else>
           <b-navbar-nav>
-            <b-button size="sm" class="mr-1">
-              <b-icon icon="grid3x3-gap"></b-icon>
-            </b-button>
-
             <b-button
               size="sm"
               class="mr-1"
               :to="{ name: 'user-boards', params: { username: user.username } }"
             >
               <b-icon icon="house-fill"></b-icon>
-            </b-button>
-
-            <b-button size="sm">
-              <b-icon icon="layout-three-columns"></b-icon>
-              <span class="ml-1">Boards</span>
             </b-button>
           </b-navbar-nav>
         </template>
@@ -41,18 +38,6 @@
         </template>
 
         <template v-else>
-          <b-button size="sm" class="mr-1">
-            <b-icon icon="plus"></b-icon>
-          </b-button>
-
-          <b-button size="sm" class="mr-1">
-            <b-icon icon="info-circle"></b-icon>
-          </b-button>
-
-          <b-button size="sm" class="mr-1">
-            <b-icon icon="bell"></b-icon>
-          </b-button>
-
           <!-- <b-avatar icon="people-circle" button></b-avatar> -->
           <b-dropdown right menu-class="mt-3" no-caret>
             <template #button-content>

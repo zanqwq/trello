@@ -18,14 +18,9 @@
         <router-link :to="{ name: 'templates' }">Templates</router-link>
         <router-link :to="{ name: 'pricing' }">Pricing</router-link>
         <router-link :to="{ name: 'platforms' }" href="#">Apps</router-link>
-        <router-link to="/">Jobs</router-link>
         <router-link :to="{ name: 'blog' }">Blog</router-link>
-        <router-link to="/">Developers</router-link>
         <router-link :to="{ name: 'about' }">About</router-link>
         <router-link :to="{ name: 'help' }">Help</router-link>
-        <router-link to="/">Legal</router-link>
-        <router-link to="/">Cookies Settings</router-link>
-        <router-link to="/">Privacy</router-link>
       </b-row>
 
       <b-row align-h="center" class="mb-5">
