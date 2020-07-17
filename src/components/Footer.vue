@@ -2,19 +2,6 @@
   <div>
     <b-container fluid>
       <b-row align-h="center" class="mb-3">
-        <b-dropdown
-          text="Select Your Language"
-          block
-          dropup
-          menu-class="w-100"
-          variant="secondary"
-        >
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">CN</b-dropdown-item>
-        </b-dropdown>
-      </b-row>
-
-      <b-row align-h="center" class="mb-3">
         <router-link :to="{ name: 'templates' }">Templates</router-link>
         <router-link :to="{ name: 'pricing' }">Pricing</router-link>
         <router-link :to="{ name: 'platforms' }" href="#">Apps</router-link>

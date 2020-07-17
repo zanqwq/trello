@@ -3,7 +3,7 @@
     <Navbar />
     <b-container class="content text-center">
       <b-row align-h="center" class="mb-3">
-        <h1>Trelle seamlessly wherever you are.</h1>
+        <h1>Trello seamlessly wherever you are.</h1>
       </b-row>
 
       <b-row align-h="center">

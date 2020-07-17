@@ -36,9 +36,6 @@
         >
           Continue
         </b-button>
-        <p class="my-3 text-muted">OR</p>
-        <b-button class="my-3" block>Continue with Google</b-button>
-        <b-button class="my-3" block>Continue with Microsoft</b-button>
         <hr />
         <b-link :to="{ name: 'login' }">Already have an account? Log in</b-link>
       </b-form>

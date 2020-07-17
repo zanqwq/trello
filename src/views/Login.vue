@@ -30,9 +30,6 @@
         >
           Login
         </b-button>
-        <p class="my-3 text-muted">OR</p>
-        <b-button class="my-3" block>Login with Google</b-button>
-        <b-button class="my-3" block>Login with Microsoft</b-button>
         <hr />
         <b-link :to="{ name: 'signup' }">Sign up for an account</b-link>
       </b-form>
